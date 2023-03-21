@@ -2,7 +2,7 @@ _:new: Recent update made `chrome` the running USER. Chrome profile must be owne
 
 Google Chrome via VNC
 ==
-`docker run -p 127.0.0.1:5900:5900 siomiz/chrome`
+`docker run -p 5900:5900 -p 3000:3000  siomiz/chrome`
 
  - Google Chrome, ~~not Chromium, for the ease of Flash plugin management~~
  - on Xvfb, with FluxBox (no window decorations)
