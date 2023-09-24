@@ -1,5 +1,5 @@
 # Use the kasmweb/chrome:1.8.0-edge image as the base image
-FROM kasmweb/chrome:1.8.0-edge
+FROM kasmweb/chrome:1.13.0
 
 # Switch to the root user
 USER root
