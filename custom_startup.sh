@@ -19,7 +19,7 @@ if [ -n "$URL" ] && ( [ -z "$DISABLE_CUSTOM_STARTUP" ] ||  [ -n "$FORCE" ] ) ; t
         then
             /usr/bin/filter_ready
             /usr/bin/desktop_ready
-            google-chrome --start-maximized --no-sandbox --remote-debugging-address=0.0.0.0 --remote-debugging-port=3000 $URL
+            google-chrome --start-maximized --no-sandbox --user-data-dir=$HOME/data --remote-debugging-address=0.0.0.0 --remote-debugging-port=3000 $URL
         fi
         sleep 1
     done
