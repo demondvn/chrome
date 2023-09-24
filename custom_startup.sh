@@ -24,3 +24,4 @@ if [ -n "$URL" ] && ( [ -z "$DISABLE_CUSTOM_STARTUP" ] ||  [ -n "$FORCE" ] ) ; t
         sleep 1
     done
     rm /tmp/custom_startup.lck
+    
