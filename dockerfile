@@ -10,7 +10,7 @@ USER root
 # Make the custom_startup.sh script executable
 # RUN chmod +x /dockerstartup/custom_startup.sh
 RUN iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 3000 -j DNAT --to-destination 127.0.0.1:3000
-# USER 1000
+USER 1000
 # Switch back to the original user (kasm)
 # USER kasm
 
