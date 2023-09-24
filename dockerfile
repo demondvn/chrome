@@ -2,7 +2,7 @@
 FROM kasmweb/chrome:1.8.0-edge
 
 # Switch to the root user
-USER root
+# USER root
 
 # Copy the custom_startup.sh file to the /dockerstartup/ directory
 COPY ./custom_startup.sh /dockerstartup/custom_startup.sh
