@@ -3,8 +3,8 @@ set -ex
 START_COMMAND="google-chrome"
 PGREP="chrome"
 MAXIMIZE="true"
-DEFAULT_ARGS="--remote-debugging-address=0.0.0.0 --remote-debugging-port=3000 --no-sandbox"
-
+DEFAULT_ARGS=""
+#--remote-debugging-address=0.0.0.0 --remote-debugging-port=3000 --no-sandbox
 if [[ $MAXIMIZE == 'true' ]] ; then
     DEFAULT_ARGS+=" --start-maximized"
 fi
